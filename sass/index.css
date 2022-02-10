@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+html * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.info-wrapper {
+  background: url(../images/bg-pattern-desktop.svg) no-repeat;
+  background-position: left;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  padding: 30px;
+  width: 60%;
+}
+
+@media screen and (max-width: 1200px) {
+  .info-wrapper {
+    width: 70%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info-wrapper {
+    height: 80%;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+.info {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Josefin Sans", sans-serif;
+  width: 60%;
+}
+
+@media screen and (max-width: 1200px) {
+  .info {
+    width: 70%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .info {
+    width: 100%;
+  }
+}
+
+.info h1 {
+  text-transform: uppercase;
+  letter-spacing: 18px;
+  color: #413a3a;
+  font-size: 6rem;
+  display: block;
+  margin-bottom: 2rem;
+  line-height: 6.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .info h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .info h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+.info h1 span {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+.info p {
+  color: #ce9797;
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+.logo-div {
+  margin: 4rem 0 5rem 0;
+  width: 100%;
+  height: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-div {
+    display: none;
+  }
+}
+
+.logo-div .logo {
+  min-width: 200px;
+}
+
+.logo-div-mobile {
+  margin: 4rem 0 5rem 0;
+  width: 100%;
+  height: 10%;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-div-mobile {
+    display: block;
+  }
+}
+
+.logo-div-mobile .logo-mobile {
+  min-width: 200px;
+}
+
+form {
+  position: relative;
+  width: 100%;
+}
+
+form input {
+  border: 0.5px solid #ce9797;
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: 2rem;
+  outline: none;
+  padding: 15px;
+  width: 80%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  form input {
+    width: 90%;
+  }
+}
+
+form button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8bfbf), to(#ee8c8c));
+  background: linear-gradient(#f8bfbf, #ee8c8c);
+  border: none;
+  border-radius: 25px;
+  position: absolute;
+  height: 55px;
+  left: 65%;
+  bottom: -5px;
+  width: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  form button {
+    left: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  form button {
+    left: 70%;
+    width: 90px;
+  }
+}
+
+.hero {
+  height: 100vh;
+  width: 40%;
+  overflow: hidden;
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 100%;
+    height: 30%;
+  }
+}
+
+.hero .hero-img {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+footer {
+  background-color: #f96262;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+footer p {
+  color: #000;
+}
+
+footer a {
+  color: #413a3a;
+  text-decoration: none;
+}
+/*# sourceMappingURL=index.css.map */
