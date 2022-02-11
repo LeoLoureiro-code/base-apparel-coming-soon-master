@@ -104,17 +104,11 @@ main {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .info {
-    width: 100%;
-  }
-}
-
 .info h1 {
   text-transform: uppercase;
-  letter-spacing: 18px;
+  letter-spacing: 16px;
   color: #413a3a;
-  font-size: 6rem;
+  font-size: 5rem;
   display: block;
   margin-bottom: 2rem;
   line-height: 6.5rem;
@@ -208,12 +202,16 @@ form {
 }
 
 form #email, form .inputError {
+  font-family: "Josefin Sans", sans-serif;
+  color: #413a3a;
+  font-size: 1rem;
+  background: transparent;
   border: 0.5px solid #ce9797;
   border-radius: 15px;
   display: inline-block;
   margin-top: 2rem;
   outline: none;
-  padding: 15px;
+  padding: 20px;
   width: 80%;
   z-index: 1;
 }
@@ -243,9 +241,9 @@ form button {
   border: none;
   border-radius: 25px;
   position: absolute;
-  height: 55px;
+  height: 60px;
   left: 65%;
-  bottom: -5px;
+  bottom: 0px;
   width: 120px;
 }
 
