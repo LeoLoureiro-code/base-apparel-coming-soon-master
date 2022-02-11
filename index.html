@@ -19,14 +19,15 @@
         Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcement and our launch deals.
       </p>
-      <form action="">
+      <form action="#" id="form">
         <input type="email" name="email" id="email">
-        <button><img src="./images/icon-arrow.svg" alt="arrow"></button>
+        <p class="errorMessage" id="error">Please provide a valid email</p>
+        <button><img src="./images/icon-arrow.svg" alt="arrow" id="sign-up-btn"></button>
       </form>
       </div>
     </div>
     <div class="hero">
-      <img src="./images/hero-desktop.jpg" alt="women looking the camera" class="hero-img">
+      <img src="./images/hero-desktop.jpg" alt="women looking the camera" class="hero-img" id="img-hero">
     </div>
     <div class="logo-div-mobile">
       <img src="./images/logo.svg" alt="Logo" class="logo-mobile">
@@ -38,5 +39,6 @@
       Coded by <a href="https://www.frontendmentor.io/profile/LeoLoureiro-code">Leonardo Loureiro</a>.
     </p>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
