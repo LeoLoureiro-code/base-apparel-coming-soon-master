@@ -1,12 +1,15 @@
 const img =  document.getElementById('img-hero')
 const input = document.getElementById('email')
+const inputValue =  document.getElementById('email')
 const form = document.getElementById('form')
+const hero = document.getElementById('img-hero')
 const btn = document.getElementById('sign-up-btn')
 const error = document.getElementById('error')
-const validation = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+const errorIcon = document.getElementById("error-icon")
+const validation = /^[^]+@[^]+\.[a-z]{2,3}$/
 
 const resize = () =>{
-    if(innerWidth < 768){
+    if(window.innerWidth < 768){
        img.src = "images/hero-mobile.jpg"
     }else{
         img.src = "images/hero-desktop.jpg"
@@ -14,32 +17,24 @@ const resize = () =>{
 }
 
 const validateInput = () =>{
-    // console.log(input.value)
-    if(!input.value.toLowerCase().match(validation) || input.value === ""){
+    if(!input.value.match(validation) || input.value.length === 0){
         input.removeAttribute('id')
         input.className = "inputError"
         error.style.display ="block"
+        errorIcon.style.display = "block"
         input.value = ""
     }else{
         input.classList.remove('inputError')
         input.setAttribute('id', 'email')
         error.style.display = "none"
+        errorIcon.style.display = "none"
         input.value = ""
     }
+
 }
 
-form.addEventListener("click", function(event){
-    event.preventDefault()
-  });
+btn.addEventListener("click", validateInput)
 
-addEventListener('resize', resize)
+window.addEventListener('resize', resize)
 
-addEventListener('DOMContentLoaded', resize)
-
-btn.addEventListener('click', validateInput)
-
-btn.addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-      validateInput()
-    }
-})
+window.addEventListener('DOMContentLoaded', resize)
