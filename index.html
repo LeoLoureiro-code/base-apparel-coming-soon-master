@@ -6,9 +6,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="sass/index.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
+  
 
-<body>
-  <main>
+<body >
+  <main id="content">
     <div class="info-wrapper">
       <div class="info">
         <div class="logo-div">
@@ -19,10 +20,11 @@
         Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcement and our launch deals.
       </p>
-      <form action="#" id="form">
-        <input type="email" name="email" id="email" placeholder="Email Address">
+      <form action="#" onsubmit="return false">
+        <input type="text" name="email" id="email" placeholder="Email Address">
+        <img src="./images/icon-error.svg" alt="error icon" id="error-icon">
         <p class="errorMessage" id="error">Please provide a valid email</p>
-        <button><img src="./images/icon-arrow.svg" alt="arrow" id="sign-up-btn"></button>
+        <button id="sign-up-btn"><img src="./images/icon-arrow.svg" alt="arrow" ></button>
       </form>
       </div>
     </div>
